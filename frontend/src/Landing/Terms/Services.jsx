@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="container py-5" style={{ maxWidth: "900px" }}>
+    <div className="container py-4 px-3 px-md-4" style={{ maxWidth: "900px" }}>
       <h2 className="mb-4">Terms of Service</h2>
 
       <p className="mb-4">

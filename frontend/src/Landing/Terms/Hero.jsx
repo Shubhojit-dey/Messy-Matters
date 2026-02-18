@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="container py-5" style={{ maxWidth: "900px" }}>
+    <div className="container py-4 px-3 px-md-4" style={{ maxWidth: "900px" }}>
 
       {/* Top text */}
       <p className="text-secondary">Welcome to Plan Sync</p>

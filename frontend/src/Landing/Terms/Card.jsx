@@ -3,7 +3,7 @@ import "./card.css";
 
 const Card = () => {
   return (
-    <div className="container py-5">
+    <div className="container py-4 px-3">
 
       <h4 className="mb-4 fw-bold">
         Our commitment is to provide a reliable and secure service for all users.
