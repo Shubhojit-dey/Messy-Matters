@@ -1,0 +1,94 @@
+:root {
+  --bg-color: #09090b;
+  --text-color: #ffffff;
+  --secondary-text: #9ca3af;
+  --border-color: #374151;
+  --card-bg: #111827;
+  --navbar-bg: #030712;
+  --footer-bg: #0f1c2e;
+  --success-color: #22c55e;
+
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Theme transition styles */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode specific overrides if needed */
+.light-mode {
+  --bg-color: #f9fafb;
+  --text-color: #111827;
+  --secondary-text: #6b7280;
+  --border-color: #e5e7eb;
+  --card-bg: #ffffff;
+  --navbar-bg: #ffffff;
+  --footer-bg: #f3f4f6;
+  --success-color: #16a34a;
+}
+
+/* Utility classes */
+.text-secondary-custom {
+  color: var(--secondary-text) !important;
+}
+
+.border-custom {
+  border-color: var(--border-color) !important;
+}
+
+.bg-card {
+  background-color: var(--card-bg) !important;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: var(--navbar-bg) !important;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--footer-bg) !important;
+  transition: background-color 0.3s ease;
+  margin-top: auto; /* This pushes footer to bottom */
+  flex-shrink: 0;
+  width: 100%;
+}
+
+/* Main content wrapper */
+.main-content {
+  flex: 1 0 auto;
+  width: 100%;
+}
